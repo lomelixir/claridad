@@ -17,7 +17,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`bg-white rounded-lg shadow-md overflow-hidden w-[400px] h-[75px] flex flex-col justify-center p-4 ${onClick ? "cursor-pointer" : ""} ${className}`.trim()}
+      className={`bg-white rounded-lg shadow-md overflow-hidden w-full h-[75px] flex flex-col justify-center p-4 ${onClick ? "cursor-pointer" : ""} ${className}`.trim()}
       onClick={onClick}
       {...props}
     >

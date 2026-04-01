@@ -18,8 +18,8 @@ export default function Home() {
         <Claridad />
         <Welcome />
       </div>
-      <div className="flex items-center justify-center mt-6">
-        <div className="grid grid-cols-1 gap-3">
+      <div className="flex items-center justify-center mt-6 px-4">
+        <div className="grid grid-cols-1 gap-3 w-full max-w-[400px]">
           <Card
             title="Tranquilo/a"
             subtitle="Me siento en paz"
