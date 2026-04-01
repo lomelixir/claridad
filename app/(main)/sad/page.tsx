@@ -3,9 +3,11 @@
 import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 
-export default function SadHome() {
+export default function SadPage() {
   const router = useRouter();
-  const goHome = () => router.push("/");
+  const handleRouteEmotion = (route: string) => {
+    router.push(route);
+  };
 
   return (
     <div className="space-y-6">
@@ -18,10 +20,14 @@ export default function SadHome() {
           Estoy aquí contigo."
         </p>
       </div>
-
-      <Button variant="primary" fullWidth onClick={goHome}>
-        Volver al inicio
-      </Button>
+      {/**Button component */}
+      <div className="flex justify-center">
+        <Button
+          onClick={() => {
+            handleRouteEmotion("/");
+          }}
+        />
+      </div>
     </div>
   );
 }

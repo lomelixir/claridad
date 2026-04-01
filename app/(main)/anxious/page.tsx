@@ -4,7 +4,7 @@ import BreathingExercise from "@/components/breathingExercise/BreathingExercise"
 import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 
-export default function AnsiedadPage() {
+export default function AnxiousPage() {
   const router = useRouter();
 
   const handleRouteEmotion = (route: string) => {
@@ -23,7 +23,7 @@ export default function AnsiedadPage() {
         <p className="dark:text-white-300 max-w-2xl mx-auto px-4">
           La ansiedad es una respuesta natural del cuerpo, pero podemos aprender
           a gestionarla. Este ejercicio de respiración te ayudará a encontrar
-          calma en momentos de estrés.
+          calma en momentos de ansiedad.
         </p>
       </div>
 

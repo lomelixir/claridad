@@ -256,7 +256,7 @@ export default function BreathingExercise() {
             </button>
             <button
               onClick={() => dispatch("RESET")}
-              className="px-6 py-2 text-sm text-gray-400 hover:text-gray-600
+              className="px-6 py-2 text-sm text-red-400 hover:text-gray-600
                 dark:hover:text-gray-200 underline transition-colors"
             >
               Cancelar

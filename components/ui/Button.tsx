@@ -1,3 +1,5 @@
+import { title } from "process";
+
 type ButtonProps = {
   onClick?: () => void;
 };
@@ -10,7 +12,7 @@ export default function Button({ onClick }: ButtonProps) {
         text-white font-semibold rounded-full shadow-lg hover:shadow-xl
         active:scale-95 transition-all duration-200"
     >
-      Regresar a inicio
+      Volver a incio
     </button>
   );
 }
