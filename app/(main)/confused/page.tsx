@@ -2,6 +2,7 @@
 
 import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
+import ProsConsAnalyzer from "@/components/prosConsAnalyzer/ProsConsAnalyzer";
 
 export default function ConfusedPage() {
   const router = useRouter();
@@ -25,7 +26,10 @@ export default function ConfusedPage() {
         </p>
       </div>
 
-      {/* Componente de respiración */}
+      {/* Componente de Pros y Contras */}
+      <div className="flex justify-center">
+        <ProsConsAnalyzer />
+      </div>
 
       {/**Button component */}
       <div className="flex justify-center">
