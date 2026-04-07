@@ -26,6 +26,11 @@ export default function Home() {
             onClick={() => handleRouteEmotion("/calm")}
           />
           <Card
+            title="Confundido/a"
+            subtitle="Necesito claridad"
+            onClick={() => handleRouteEmotion("/confused")}
+          />
+          <Card
             title="Ansioso/a"
             subtitle="Tengo nervios o preocupación"
             onClick={() => handleRouteEmotion("/anxious")}
@@ -39,11 +44,6 @@ export default function Home() {
             title="Estresado/a"
             subtitle="Siento presión o agobio"
             onClick={() => handleRouteEmotion("/stressed")}
-          />
-          <Card
-            title="Confundido/a"
-            subtitle="Necesito claridad"
-            onClick={() => handleRouteEmotion("/confused")}
           />
         </div>
       </div>
