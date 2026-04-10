@@ -21,8 +21,8 @@ export default function StressedPage() {
           Manejo del Estrés
         </h1>
         <p className="dark:text-white-300 max-w-2xl mx-auto px-4">
-          "El estrés puede ser abrumador. Hagamos una pausa y enfoquémonos en el
-          presente."
+          El estrés puede ser abrumador. Hagamos una pausa y enfoquémonos en el
+          presente.
         </p>
       </div>
 

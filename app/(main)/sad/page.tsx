@@ -1,6 +1,6 @@
 "use client";
 
-import BreathingExercise from "@/components/breathingExercise/BreathingExercise";
+import SadQuiz from "@/components/sadQuiz/SadQuiz";
 import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 
@@ -21,10 +21,13 @@ export default function StressedPage() {
           Sintiendo la Tristeza
         </h1>
         <p className="dark:text-white-300 max-w-2xl mx-auto px-4">
-          "La tristeza es una emoción válida. Permítete sentirla sin juzgarte.
-          Estoy aquí contigo."
+          La tristeza es una emoción válida. Permítete sentirla sin juzgarte.
+          Estoy aquí contigo.
         </p>
       </div>
+
+      {/*Cuestionario Binario*/}
+      <SadQuiz />
 
       {/**Button component */}
       <div className="flex justify-center">
