@@ -158,10 +158,19 @@ export default function BreathingExercise() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[600px] p-6">
       {/* Footer info */}
-      <p className="text-center text-sm text-gray-500 dark:text-gray-400 max-w-md px-4 mb-2">
-        Técnica 4-7-8: Inhalar 4s · Retener 7s · Exhalar 8s. Realiza{" "}
-        {TOTAL_CYCLES} ciclos.
-      </p>
+      <div className="text-center mb-4">
+        <h2
+          className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 
+          bg-clip-text text-transparent mb-2"
+        >
+          Respiración Consciente
+        </h2>
+        <p className="text-center text-sm text-gray-500 dark:text-gray-400 max-w-md px-4 mb-2">
+          Técnica 4-7-8: Inhalar 4s · Retener 7s · Exhalar 8s. Realiza{" "}
+          {TOTAL_CYCLES} ciclos.
+        </p>
+      </div>
+
       {/* Cycle counter */}
 
       <div className="mb-8 text-center">
