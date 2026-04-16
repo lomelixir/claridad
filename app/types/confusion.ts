@@ -14,3 +14,20 @@ export interface Decision {
   createdAt: Date;
   updatedAt: Date;
 }
+
+export type QuizResult = {
+  title: string;
+  description: string;
+  action: string;
+  color: string;
+  emoji: string;
+};
+
+export type SadQuizHistory = {
+  id: string;
+  date: string;
+  answers: boolean[];
+  result: string;
+  resultEmoji: string;
+  resultColor: string;
+};

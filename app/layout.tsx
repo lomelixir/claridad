@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     "inteligencia emocional",
     "mindfulness",
   ],
+  icons: {
+    icon: "/claridad.svg",
+  },
 };
 
 export default function RootLayout({
