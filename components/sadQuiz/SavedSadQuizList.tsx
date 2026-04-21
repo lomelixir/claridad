@@ -18,7 +18,7 @@ export default function SavedSadQuizHistory({
   if (history.length === 0) return null;
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 mt-6">
+    <div className="bg-white rounded-xl shadow-lg p-6 mt-6 mx-4 sm:mx-0">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-bold">📊 Historial de tus tristezas</h3>
         <button
@@ -34,7 +34,7 @@ export default function SavedSadQuizHistory({
           <div
             key={item.id}
             className="p-3 border border-gray-200 dark:border-gray-700 rounded-lg 
-              hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition group"
+              hover:bg-gray-50 dark:hover:bg-blue-300 cursor-pointer transition"
             onClick={() => onLoad(item)}
           >
             <div className="flex justify-between items-start">

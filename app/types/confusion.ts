@@ -31,3 +31,9 @@ export type SadQuizHistory = {
   resultEmoji: string;
   resultColor: string;
 };
+
+export interface PeaceEntry {
+  id: string;
+  content: string;
+  date: string;
+}
