@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import type { PeaceEntry } from "@/app/types/confusion";
+import SavedPeaceMomentList from "./SavedPeaceMomentList";
 
 export default function PeaceDiary() {
   const [currentContent, setCurrentContent] = useState("");
@@ -68,21 +69,7 @@ export default function PeaceDiary() {
         </div>
 
         {/* Lista de entradas recientes */}
-        {entries.length > 0 && (
-          <div className="mt-6 space-y-3">
-            <p className="text-sm font-medium text-gray-600">
-              Tus momentos de paz recientes:
-            </p>
-            {entries.slice(0, 3).map((entry) => (
-              <div key={entry.id} className="p-2 bg-green-50 rounded-lg">
-                <p className="text-sm text-gray-700">✨ {entry.content}</p>
-                <span className="text-xs text-gray-400">
-                  {new Date(entry.date).toLocaleDateString()}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
+        <SavedPeaceMomentList entries={entries} />
       </div>
     </div>
   );
