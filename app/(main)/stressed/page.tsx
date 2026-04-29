@@ -11,7 +11,7 @@ export default function StressedPage() {
     router.push(route);
   };
   return (
-    <main className="min-h-screen bg-[#9dfaed] dark:from-gray-900 dark:to-gray-800">
+    <div>
       {/* Header */}
       <div className="relative text-center pt-12 pb-6">
         <h1
@@ -20,7 +20,7 @@ export default function StressedPage() {
         >
           Manejo del Estrés
         </h1>
-        <p className="dark:text-white-300 max-w-2xl mx-auto px-4">
+        <p className="text-gray-300 font-semibold max-w-2xl mx-auto px-4">
           El estrés puede ser abrumador. Hagamos una pausa y enfoquémonos en el
           presente.
         </p>
@@ -72,6 +72,6 @@ export default function StressedPage() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

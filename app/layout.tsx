@@ -39,14 +39,25 @@ export default function RootLayout({
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col relative">
-        <Image
-          src="/bgClari.png"
-          alt=""
-          fill
-          priority
-          className="object-cover -z-10"
-        />
+      <body className="min-h-full flex flex-col">
+        <div className="fixed inset-0 -z-10">
+          <Image
+            src="/bgMobile.png"
+            alt=""
+            fill
+            sizes="(max-width: 767px) 100vw, 0px"
+            priority
+            className="object-cover md:hidden"
+          />
+          <Image
+            src="/bgDesktop.png"
+            alt=""
+            fill
+            sizes="(min-width: 768px) 100vw, 0px"
+            priority
+            className="object-cover hidden md:block"
+          />
+        </div>
         {children}
       </body>
     </html>

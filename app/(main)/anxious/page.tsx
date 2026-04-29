@@ -2,6 +2,7 @@
 
 import BreathingExercise from "@/components/breathingExercise/BreathingExercise";
 import Button from "@/components/ui/Button";
+
 import { useRouter } from "next/navigation";
 
 export default function AnxiousPage() {
@@ -11,7 +12,7 @@ export default function AnxiousPage() {
     router.push(route);
   };
   return (
-    <main className="min-h-screen bg-[#9dfaed] dark:from-gray-900 dark:to-gray-800">
+    <div className="space-y-6">
       {/* Header */}
       <div className="relative text-center pt-12 pb-6">
         <h1
@@ -20,7 +21,7 @@ export default function AnxiousPage() {
         >
           Manejo de la Ansiedad
         </h1>
-        <p className="dark:text-white-300 max-w-2xl mx-auto px-4">
+        <p className="text-gray-300 font-semibold max-w-2xl mx-auto px-4">
           La ansiedad es una respuesta natural del cuerpo, pero podemos aprender
           a gestionarla. Este ejercicio de respiración te ayudará a encontrar
           calma en momentos de ansiedad.
@@ -73,6 +74,6 @@ export default function AnxiousPage() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

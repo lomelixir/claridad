@@ -19,7 +19,7 @@ export default function CalmPage() {
         >
           Paz y tranquilidad
         </h1>
-        <p className="dark:text-white-300 max-w-2xl mx-auto px-4">
+        <p className="text-gray-300 font-semibold max-w-2xl mx-auto px-4">
           La paz interior te proporciona fuerza para fluir con armonía en tu
           vida.
         </p>

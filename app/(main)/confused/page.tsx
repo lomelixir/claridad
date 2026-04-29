@@ -11,7 +11,7 @@ export default function ConfusedPage() {
     router.push(route);
   };
   return (
-    <main className="min-h-screen bg-[#9dfaed] dark:from-gray-900 dark:to-gray-800">
+    <div>
       {/* Header */}
       <div className="relative text-center pt-12 pb-6">
         <h1
@@ -20,7 +20,7 @@ export default function ConfusedPage() {
         >
           Creando Claridad
         </h1>
-        <p className="dark:text-white-300 max-w-2xl mx-auto px-4">
+        <p className="text-gray-300 font-semibold max-w-2xl mx-auto px-4">
           Cuando las decisiones te abruman, visualizar los pros y contras te
           ayuda a ver el panorama completo y tomar decisiones más conscientes.
         </p>
@@ -69,6 +69,6 @@ export default function ConfusedPage() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
