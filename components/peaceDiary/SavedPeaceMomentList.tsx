@@ -20,7 +20,7 @@ export default function SavedPeaceMomentList({ entries, onDelete }: Props) {
           <div
             key={entry.id}
             className="relative p-3 min-h-[5.5rem] border border-gray-200 dark:border-gray-700 rounded-lg
-              hover:bg-gray-50 dark:hover:bg-green-900 transition group"
+              hover:bg-gray-50 dark:hover:bg-blue-300 transition group"
           >
             <div className="flex-1">
               <p className="text-sm text-black">✨ {entry.content}</p>
