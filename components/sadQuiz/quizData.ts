@@ -83,9 +83,9 @@ export const getResultFromAnswers = (answers: boolean[]): QuizResult => {
     return {
       title: "Tristeza que estás evitando 🏃",
       description:
-        "Hay algo que no quieres mirar, y esa evitación está alargando el malestar.",
+        "Hay algo que no quieres mirar, eso está aumentando el malestar.",
       action:
-        "Escribe 5 minutos sin parar lo que evitas. No necesitas arreglarlo, solo soltarlo en el papel. Después, tacha o rompe ese papel si quieres.",
+        "Escribe lo que hay en tu mente. Traer a la realidad tus pensamientos, emociones y sentimientos puede ayudarte a crear claridad.",
       color: "from-orange-400 to-red-400",
       emoji: "🏃",
     };

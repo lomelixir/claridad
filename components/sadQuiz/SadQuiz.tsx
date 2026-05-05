@@ -107,8 +107,8 @@ export default function SadQuiz() {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="text-center mb-4">
+    <div className="flex justify-center px-4 sm:px-6">
+      <div className="text-center mb-4 w-full max-w-2xl">
         <h2
           className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 
           bg-clip-text text-transparent mb-2"
@@ -135,7 +135,7 @@ export default function SadQuiz() {
 
         {quizStarted && !quizFinished && (
           <div className="mt-6 max-w-md mx-auto w-full px-4">
-            <p className="text-sm text-gray-400 mb-3">
+            <p className="text-md text-white mb-3">
               {currentQuestionIndex + 1} / {QUESTIONS.length}
             </p>
             <div className="w-full bg-gray-200 rounded-full h-3.5 mb-6">
@@ -146,7 +146,7 @@ export default function SadQuiz() {
                 }}
               />
             </div>
-            <p className="text-black-700 dark:text-black-200 text-lg mb-6">
+            <p className="font-bold text-white text-lg mb-9">
               {QUESTIONS[currentQuestionIndex]}
             </p>
             <div className="flex gap-4 justify-center">

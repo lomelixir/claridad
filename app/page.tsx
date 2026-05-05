@@ -27,27 +27,27 @@ export default function Home() {
             onClick={() => handleRouteEmotion("/calm")}
           />
           <Card
-            title="Confundido/a"
-            subtitle="Necesito claridad"
-            emoji="🤔"
-            onClick={() => handleRouteEmotion("/confused")}
-          />
-          <Card
             title="Ansioso/a"
             subtitle="Tengo nervios o preocupación"
             emoji="🌪️"
             onClick={() => handleRouteEmotion("/anxious")}
           />
           <Card
+            title="Confundido/a"
+            subtitle="Necesito claridad"
+            emoji="🧭"
+            onClick={() => handleRouteEmotion("/confused")}
+          />
+          <Card
             title="Triste"
             subtitle="Me siento decaído/a"
-            emoji="😔 "
+            emoji="🥀"
             onClick={() => handleRouteEmotion("/sad")}
           />
           <Card
             title="Estresado/a"
             subtitle="Siento presión o agobio"
-            emoji="🤯"
+            emoji="💥"
             onClick={() => handleRouteEmotion("/stressed")}
           />
         </div>

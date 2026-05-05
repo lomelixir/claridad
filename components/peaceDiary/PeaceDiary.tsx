@@ -1,10 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { PeaceEntry } from "@/app/types/confusion";
 import SavedPeaceMomentList from "./SavedPeaceMomentList";
 
 export default function PeaceDiary() {
   const [currentContent, setCurrentContent] = useState("");
   const [entries, setEntries] = useState<PeaceEntry[]>([]);
+  const hasMounted = useRef(false);
+
+  const handleDelete = (id: string) => {
+    setEntries((prev) => prev.filter((e) => e.id !== id));
+  };
+
+  const handleClearAll = () => {
+    setEntries([]);
+  };
 
   const handleSave = () => {
     if (currentContent.length === 0) return;
@@ -23,14 +32,18 @@ export default function PeaceDiary() {
     if (stored) setEntries(JSON.parse(stored));
   }, []);
 
-  // Guardar en localStorage cada vez que cambie entries
+  // Guardar en localStorage, pero omitir el primer render (entries = [])
   useEffect(() => {
+    if (!hasMounted.current) {
+      hasMounted.current = true;
+      return;
+    }
     localStorage.setItem("claridad_peace_entries", JSON.stringify(entries));
   }, [entries]);
 
   return (
-    <div className="mx-4 sm:mx-0">
-      <div className="text-center mb-4">
+    <div className="flex justify-center px-4 sm:px-6">
+      <div className="text-center mb-4 w-full max-w-2xl">
         <h2
           className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 
           bg-clip-text text-transparent mb-2"
@@ -69,7 +82,12 @@ export default function PeaceDiary() {
         </div>
 
         {/* Lista de entradas recientes */}
-        <SavedPeaceMomentList entries={entries} />
+
+        <SavedPeaceMomentList
+          entries={entries}
+          onDelete={handleDelete}
+          onClearAll={handleClearAll}
+        />
       </div>
     </div>
   );
